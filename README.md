@@ -1,4 +1,6 @@
-### Please Ready Entire Instructions
+## MedScout Refactor Coding Test
+
+### Please Read All Instructions
 
 1. We want to say that we absolutely hate tricky tests. There is nothing in this test that is "tricky". Nobody in the development world actually tries to find the cross reference of 29 chickens jumping over a building in a single bound all while drinking earl grey tea and eating twizzlers. It's just not real world programming.
 
