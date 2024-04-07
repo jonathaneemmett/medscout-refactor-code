@@ -6,6 +6,7 @@
 		"frontend": "next dev",
 		"backend": "npx json-server --watch db.json --port 8000",
 		"dev": "concurrently \"npm run frontend\" \"npm run backend\"",
+		"test": "jest --watch",
 		"build": "next build",
 		"lint": "next lint"
 	},

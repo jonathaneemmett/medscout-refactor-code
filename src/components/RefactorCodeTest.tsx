@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, useForm } from 'react-hook-form';
+import { useForm } from 'react-hook-form';
 import { useQuery, useMutation } from 'react-query';
 import { Input, Button, CircularProgress, FormHelperText } from '@mui/joy';
 
@@ -36,6 +36,10 @@ const RefactorCodeTest = () => {
 					<Input
 						type='text'
 						defaultValue={userData.name}
+						variant='soft'
+						size='sm'
+						color='neutral'
+						aria-label='Name'
 						{...register('name', {
 							required: 'Name is required',
 						})}
@@ -51,6 +55,7 @@ const RefactorCodeTest = () => {
 						variant='soft'
 						size='sm'
 						color='neutral'
+						aria-label='Email'
 						{...register('email', {
 							required: 'Valid email is required',
 							pattern: {
@@ -67,6 +72,10 @@ const RefactorCodeTest = () => {
 					<Input
 						type='password'
 						defaultValue={userData.password}
+						variant='soft'
+						size='sm'
+						color='neutral'
+						aria-label='Password'
 						{...register('password', {
 							required: 'Password is required',
 							minLength: {
@@ -82,7 +91,13 @@ const RefactorCodeTest = () => {
 						)}
 					</FormHelperText>
 
-					<Button type='submit'>Save</Button>
+					<Button
+						type='submit'
+						variant='soft'
+						color='neutral'
+						aria-label='Submit'>
+						Save
+					</Button>
 				</form>
 			)}
 		</div>
